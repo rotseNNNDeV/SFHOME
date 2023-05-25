@@ -1,37 +1,88 @@
-<body>
-    <div class="slds-text-heading_large" style="padding: 0.5rem; background: #16325c; text-align: center; color: aliceblue; font-size: 25px;">
-        <img src="ruta_de_la_imagen.png" alt="Logo corporativo" style="max-width: 200px;">
-        <br>
-        Welcome to Salesforce.
+<apex:page >
+ <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin: 5px 0;
+        padding: 0;
+      }
+      a {
+        color: #38598b;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .header {
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+        background-color: #1f1f1f; /* Gris oscuro */
+        color: #fff;
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #ccc;
+        margin-right: 20%;
+      }
+      .footer {
+        padding: 20px;
+        background-color: #1f1f1f; /* Gris oscuro */
+        color: #fff;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 80%;
+      }
+      .contact {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+  <div style="text-align: center;">
+    <img src="https://checkpointsystems.sharepoint.com/sites/marketingpartner/shared%20documents/salesforce%20pricing/1658949087636.jpg?web=1" alt="Imagen de encabezado"> </img>
     </div>
-    <div class="slds-border_left" style="padding: 0.5rem; text-align: left; font-size: 10px;">
-        Above you have the Menu Navigation Bar; Where you can navigate through the platform
-        <ul>
-            <li>Accounts</li>
-            <li>Pricebooks</li>
-            <li>Products</li>
-            <li>Approval Request</li>
-            <li>Reports</li>
-            <li>Dashboards</li>
-        </ul>
+    <div class="header">
+      Welcome to Salesforce. Test Environment
     </div>
-    <div class="slds-border_right" style="padding: 0.5rem; text-align: right; font-size: 10px;">
-        <div>
-            Above you can see your personal dashboard with custom reports made for you. 
-            <br>
-            Don't forget to refresh the dashboard to watch the last info. 
-        </div>
+    <div class="content">
+      <p>Above you have the Menu Navigation Bar; Where you can navigate through the platform</p>
+      <ul>
+        <li>Accounts</li>
+        <li>Pricebooks</li>
+        <li>Products</li>
+        <li>Approval Request</li>
+        <li>Reports</li>
+        <li>Dashboards</li>
+      </ul>
+      <p>Above you can see your personal dashboard with custom reports made for you. Don't forget to refresh the dashboard to watch the last info.</p>
     </div>
-    <div class="slds-border_right" style="padding: 0.5rem; text-align: center; font-size: 10px;">
-        <div>
-            If you need help, you can see the User Guide
-            <a href="https://checkpointsystems.sharepoint.com/sites/MarketingPartner/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMarketingPartner%2FShared%20Documents%2FSALESFORCE%20PRICING%2FSalesforce%20User%20Guide%5FENG%2Epdf&viewid=033f5f28%2Ddb7e%2D4fad%2Da8bb%2D8881444e3bdc&parent=%2Fsites%2FMarketingPartner%2FShared%20Documents%2FSALESFORCE%20PRICING" style="color: #38598b;">
-                Here.
-            </a> 
-        </div>
-        <div>
-            You can contact Salesforce admins via mail clicking
-            <a href="mailto:masterdata.eu@checkpt.com">Here.</a>
-        </div>
+    <div class="contact">
+      <p>For more info, you can see the User Guide: <a href="https://checkpointsystems.sharepoint.com/sites/MarketingPartner/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMarketingPartner%2FShared%20Documents%2FSALESFORCE%20PRICING%2FSalesforce%20User%20Guide%5FENG%2Epdf&parent=%2Fsites%2FMarketingPartner%2FShared%20Documents%2FSALESFORCE%20PRICING">Here.</a></p>
+      <p>If you need help don't hesitate in contact Salesforce admins <a href="mailto:masterdata.eu@checkpt.com">here</a>.</p>
     </div>
-</body>
+    <div class="footer">
+      © 2023 Checkpoint Systems, inc. All rights reserved.
+    </div>
+  </body>
+  
+
+</apex:page>
+                                        
