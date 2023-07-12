@@ -1,90 +1,102 @@
 <apex:page >
   <head>
-     <style>
-       body {
-         font-family: Arial, sans-serif;
-         font-size: 10px;
-         color: #333;
-         background-color: #f2f2f2;
-         margin: 0;
-         padding: 0;
-       }
-       ul {
-         list-style: none;
-       }
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        color: #333;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        color: #38598b;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .header {
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+        background-color: #2C3947; /* Gris oscuro */
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+      }
+      .nav {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+    margin-right: 20%;
+    display: flex; /* Añadimos esta línea para convertir la lista en un contenedor flex */
+    justify-content: space-between; /* Añadimos esta línea para distribuir los elementos horizontalmente */
+    align-items: center; /* Añadimos esta línea para centrar verticalmente los elementos */
+    text-align: center;
+  }
 
-       a {    
-         color: #38598b;
-         text-decoration: none;
-       }
-       a:hover {
-         text-decoration: underline;
-       }
-       .header {
-         padding: 20px;
-         border-bottom: 1px solid #ccc;
-         background-color: #2C3947; /* Gris oscuro */
-         color: #fff;
-         text-align: center;
-         font-size: 14px;
-       }
-       .content {
-         padding: 20px;
-         background-color: #fff;
-         border: 1px solid #ccc;
-         border-radius: 5px;
-         box-shadow: 2px 2px 5px #ccc;
-         margin-right: 20%;
-       }
-       .footer {
-         padding: 20px;
-         background-color: #2C3947; /* Gris oscuro */
-         color: #fff;
-         text-align: center;
-       }
-       .contact {
-         text-align: center;
-       }
-     </style>
-   </head>
-   <body>
-     <div class="header">
-       Welcome to Salesforce.
-     </div>
-     <div class="content">
-       <p>Above you have the Menu Navigation Bar; Where you can navigate through the platform</p>
-       <ul>
-         <li>Accounts</li>
-         <li>Pricebooks</li>
-         <li>Products</li>
-         <li>Approval Request</li>
-         <li>Reports</li>
-         <li>Dashboards</li>
-       </ul>
-       <p>Scrolling down you can see your personal dashboard with custom reports made for you. Don't forget to refresh the dashboard to watch the last info.</p>
-     </div>
-     <div class="contact">
-       <p>If you need help, here you have some Usefull Material:</p>
-       <ul>
-           <li> <p>User Guide:</p>
-             <a href="https://checkpointsystems.sharepoint.com/sites/MarketingPartner/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMarketingPartner%2FShared%20Documents%2FSALESFORCE%20PRICING%2FSalesforce%20User%20Guide%5FENG%2Epdf&parent=%2Fsites%2FMarketingPartner%2FShared%20Documents%2FSALESFORCE%20PRICING">HERE</a>
-           </li>
-           <li> 
-           <p>Import / Export Tool: </p>
-            <a href="https://checkpointsystems.sharepoint.com/sites/MarketingPartner/_layouts/15/stream.aspx?id=%2Fsites%2FMarketingPartner%2FShared%20Documents%2FSALESFORCE%20PRICING%2FImport%20Export%20Tool%20SalesForce%2Emp4">HERE</a>
-           </li>
-           <li>
-            <P>If you have technical problems contact Salesforce admins:</P>
-             <a href="mailto:masterdata.eu@checkpt.com">HERE</a>
-           </li>
-       </ul> 
-        
-       
-     </div>
-     <div class="footer">
-       © 2023 Checkpoint Systems. All rights reserved.
-     </div>
-   </body>
-   
- 
- </apex:page>                                      
+  .nav li {
+    margin-bottom: 10px;
+    display: inline; /* Añadimos esta línea para hacer que los elementos de lista sean inline */
+  }
+      }
+      .footer {
+        padding: 20px;
+        background-color: #2C3947; /* Gris oscuro */
+        color: #fff;
+        text-align: center;
+      }
+      .contact {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      Welcome to Salesforce.
+    </div>
+    <div>
+      <p>Above you have the Menu Navigation Bar; Where you can navigate through the platform</p>
+    </div>
+    <nav class="nav">
+  
+      <ul>
+        <li><a href="https://checkpointsystems-dev-ed.develop.lightning.force.com/lightning/o/Opportunity/list?filterName=00B7R00000GDCN4UAP">All Opportunities</a></li>
+        <li><a href="https://checkpointsystems-dev-ed.develop.lightning.force.com/lightning/o/Campaign/list?filterName=00B7R00000GDCN1UAP">Active Campaigns</a></li>
+        <li><a href="https://checkpointsystems-dev-ed.develop.lightning.force.com/lightning/o/Lead/list?filterName=00B7R00000GDCN7UAP">Open Leads</a></li>
+        <li><a href="https://checkpointsystems-dev-ed.develop.lightning.force.com/lightning/o/Contact/list?filterName=00B7R00000GDCN2UAP">Contacts</a></li>
+        <li><a href="https://checkpointsystems-dev-ed.develop.lightning.force.com/lightning/o/Report/home?queryScope=mru">Reports</a></li>
+        <li><a href="https://checkpointsystems-dev-ed.develop.lightning.force.com/lightning/o/Dashboard/home?queryScope=mru">Dashboards</a></li>
+        <li><a href="https://checkpoint-systems.preview.ceros.com/euroshop-1/page/page-63d240e16f093">Catalog</a></li>
+      </ul>
+      
+    </nav>
+    <div>
+    <p>Scrolling down you can see your personal dashboard with custom reports made for you. Don't forget to refresh the dashboard to watch the last info.</p>
+    </div>
+    <div class="contact">
+      <p>If you need help, here you have some Useful Material:</p>
+      <ul>
+        <li>
+          <p>User Guide:</p>
+          <a href="https://checkpointsystems.sharepoint.com/sites/MarketingPartner/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FMarketingPartner%2FShared%20Documents%2FSALESFORCE%20PRICING%2FSalesforce%20User%20Guide%5FENG%2Epdf&parent=%2Fsites%2FMarketingPartner%2FShared%20Documents%2FSALESFORCE%20PRICING">HERE</a>
+        </li>
+        <li>
+          <p>Import / Export Tool:</p>
+          <a href="https://checkpointsystems.sharepoint.com/sites/MarketingPartner/_layouts/15/stream.aspx?id=%2Fsites%2FMarketingPartner%2FShared%20Documents%2FSALESFORCE%20PRICING%2FImport%20Export%20Tool%20SalesForce%2Emp4">HERE</a>
+        </li>
+        <li>
+          <p>If you have technical problems contact Salesforce admins:</p>
+          <a href="mailto:masterdata.eu@checkpt.com">HERE</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      © 2023 Checkpoint Systems. All rights reserved.
+    </div>
+  </body>
